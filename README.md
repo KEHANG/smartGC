@@ -1,0 +1,2 @@
+# smartGC
+GC analysis tool
