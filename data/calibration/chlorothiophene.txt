@@ -1,0 +1,11 @@
+Signal: 20161006_02_3chlorothiophene_01ul.D\FID1B.ch
+20161006_02_3chlorothiophene_01ul
+
+volume/uL	Ret Time	Type	Width	Area	Start Time	End Time	
+0.1	7.115	   M	0.106	    151346959	6.925	7.277		
+0.2	7.176	   M	0.139	    261284787	6.925	7.311	
+0.5	7.319	   M	0.213	    624344880	6.921	7.421		
+1	7.475	   M	0.296	   1184332155	6.915	7.618	
+
+	
+
