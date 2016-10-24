@@ -128,21 +128,32 @@ def calculate_speciation_in_moles_per_total_mass(
 	return speciation_dict_in_moles_per_total_mass
 
 if __name__ == '__main__':
+
+	condition_samples_dict = {}
+	condition_samples_dict['before_pyrolysis'] = ['new_sample1_bf_instd',
+												'new_sample2_bf_instd',
+												'new_sample3_bf_instd',
+												]
+
+	condition_samples_dict['pyrolysis_400C'] = ['new_sample1_aft_instd', 
+												'new_sample1_aft_instd_repeat',
+												'new_sample2_aft_instd',
+												'new_sample2_aft_instd_repeat', 
+												'new_sample3_aft_instd', 
+												'new_sample3_aft_instd_repeat'
+												]
+	condition_samples_dict['pyrolysis_450C'] = ['new_sample1_aft_instd', 
+												'new_sample1_aft_instd_repeat',
+												'new_sample2_aft_instd_repeat', 
+												'new_sample3_aft_instd', 
+												'new_sample3_aft_instd_repeat'
+												]							
 	
-	condition = 'pyrolysis_450C'
-	samples = [
-			'new_sample1_bf_instd',
-			'new_sample1_aft_instd', 
-			'new_sample1_aft_instd_repeat',
-			'new_sample2_bf_instd',
-			'new_sample2_aft_instd_repeat', 
-			'new_sample3_bf_instd',
-			'new_sample3_aft_instd', 
-			'new_sample3_aft_instd_repeat'
-			]
+	condition = 'before_pyrolysis'
+	samples = condition_samples_dict[condition]
+
 	for sample in samples:
 		prepare_speciation_in_moles_per_total_mass(
 										condition,
 										sample
 										)
-
